@@ -46,7 +46,7 @@ jobs:
       id: task-def
       uses: aws-actions/amazon-ecs-render-task-definition@v1
       with:
-        task-definition: devops/CI_CD\ pipeline/deploy2:5.json
+        task-definition: ./CI_CD\ pipeline/deploy2:5.json
         container-name: nginx-app
         image: ${{ steps.build-image.outputs.image }}
 
